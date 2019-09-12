@@ -10,3 +10,5 @@ Deep Reinforcement Learning Nanodegree from Udacity
     - [OpenAI Gym CliffWalkingEnv](./assignments/P1-Intro/L7-Temporal-Difference/Temporal_Difference.ipynb)
  - Lesson 8: OpenAI Gym's Taxi-v2
     - [LabTaxi](./assignments/P1-Intro/L8-Lab-Taxi/lab-taxi.ipynb)
+ - Lesson 9: RL in Continuous Spaces
+    - [Discretization](./assignments/P1-Intro/L9-RL-in-Continuous-Spaces/Discretization/Discretization.ipynb)
