@@ -13,3 +13,10 @@ Deep Reinforcement Learning Nanodegree from Udacity
  - Lesson 9: RL in Continuous Spaces
     - [Discretization](./assignments/P1-Intro/L9-RL-in-Continuous-Spaces/Discretization/Discretization.ipynb)
     - [Tile Coding](./assignments/P1-Intro/L9-RL-in-Continuous-Spaces/Tile-Coding/Tile_Coding.ipynb)
+
+#### Part 2: Value-Based Methods
+ - Lesson 2: Deep Q-Networks
+    - [Deep Q-Learning Algorithm](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/Deep_Q_Network.ipynb)
+    - <p><img align="left" width="400" src="./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/gifs/001.gif"></p>
+      <p><img align="left" width="400" src="./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/gifs/002.gif"></p>
+    
