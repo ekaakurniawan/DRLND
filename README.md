@@ -19,3 +19,8 @@ Deep Reinforcement Learning Nanodegree from Udacity
     - [Deep Q-Learning Algorithm](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/Deep_Q_Network.ipynb)
     - ![Deep Q-Learning Algorithm GIF1](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/gifs/001.gif)
     - ![Deep Q-Learning Algorithm GIF2](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/gifs/002.gif)
+
+### Projects
+#### Project 1: Navigation
+ - [Navigation](https://github.com/ekaakurniawan/DRLND/blob/master/p1_navigation/Navigation.ipynb)
+ - ![Navigation GIF1](./p1_navigation/results/gif/01.gif)
