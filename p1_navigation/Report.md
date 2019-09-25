@@ -30,7 +30,7 @@ Where is exploration value epsilon start at high value (1.0) but then gradually 
 down to 0.01. The target average score of 13 or higher in 100 episodes window was 
 achieved in 473 episodes. The learning progress is shown below.
 
-![Learning Scores](./p1_navigation/images/learning-scores.png)
+![Learning Scores](./images/learning-scores.png)
 
 ### Agent Performance
 
