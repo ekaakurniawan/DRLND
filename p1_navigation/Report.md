@@ -13,12 +13,12 @@ the high number of nodes are selected so the model can have better learning capa
 Replay buffer is useful as one of to ways implemented to remove correlations. It stores 
 tuples of state, action, reward, next state and done flag. Each tuple is unique to avoid 
 rare events overshadowed by common events. Sampling these experience tuples is done randomly 
-in batch. This random sampling is the one that remove correlations.
+in batch. This random sampling is the one that removes correlations.
 
 ### Agent
 
 Agents holds Q-table as foundation to perform action based on current state it is in. This 
-Q-table is implemented using Neural Networks called Q-network describe above. Another 
+Q-table is implemented using Neural Networks called Q-network described above. Another 
 way to reduce correlations is by implementing two Q-networks. One that is frequently 
 updated and another one that is occasionally updated acting as the solid ground. The
 algorithm used for learning is sarsamax.
@@ -42,4 +42,4 @@ circular state-action loop and cannot go out of the situation. After make it hig
 
 This initial training use a massive neural networks just to make sure that the agent 
 has the capability to perform well. Reducing the 512 nodes to 256 or 128 as well as the 
-64 nodes to 32 or 16 might produce similar result with much efficiency.
+64 nodes to 32 or 16 might produce similar result with better efficiency.
