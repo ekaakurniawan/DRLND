@@ -19,6 +19,11 @@ Deep Reinforcement Learning Nanodegree from Udacity
     - [Deep Q-Learning Algorithm](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/Deep_Q_Network.ipynb)
     - ![Deep Q-Learning Algorithm GIF1](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/gifs/001.gif)
     - ![Deep Q-Learning Algorithm GIF2](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/gifs/002.gif)
+    
+#### Part 3: Policy-Based Methods
+ - Lesson 2: Introduction
+    - [Cross Entropy](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/cross-entropy/CEM.ipynb)
+    - ![Cross Entropy GIF1](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/cross-entropy/gifs/001.gif)
 
 ### Projects
 #### Project 1: Navigation
