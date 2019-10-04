@@ -26,6 +26,8 @@ Deep Reinforcement Learning Nanodegree from Udacity
     - ![Cross Entropy GIF1](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/cross-entropy/gifs/001.gif)
     - [Hill Climbing](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/hill-climbing/Hill_Climbing.ipynb)
     - ![Hill Climbing GIF1](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/hill-climbing/gifs/001.gif)
+ - Lesson 3: Policy Gradient Methods
+    - [REINFORCE](https://github.com/ekaakurniawan/DRLND/blob/master/assignments/P3-Policy-Based-Methods/L3-Policy-Gradient-Methods/reinforce/REINFORCE.ipynb)
 
 ### Projects
 #### Project 1: Navigation
