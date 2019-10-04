@@ -24,6 +24,8 @@ Deep Reinforcement Learning Nanodegree from Udacity
  - Lesson 2: Introduction
     - [Cross Entropy](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/cross-entropy/CEM.ipynb)
     - ![Cross Entropy GIF1](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/cross-entropy/gifs/001.gif)
+    - [Hill Climbing](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/hill-climbing/Hill_Climbing.ipynb)
+    - ![Hill Climbing GIF1](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/hill-climbing/gifs/001.gif)
 
 ### Projects
 #### Project 1: Navigation
