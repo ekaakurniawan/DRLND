@@ -19,7 +19,7 @@ Deep Reinforcement Learning Nanodegree from Udacity
     - [Deep Q-Learning Algorithm](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/Deep_Q_Network.ipynb)
     - ![Deep Q-Learning Algorithm GIF1](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/gifs/001.gif)
     - ![Deep Q-Learning Algorithm GIF2](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/gifs/002.gif)
-    
+
 #### Part 3: Policy-Based Methods
  - Lesson 2: Introduction
     - [Cross Entropy](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/cross-entropy/CEM.ipynb)
@@ -27,7 +27,10 @@ Deep Reinforcement Learning Nanodegree from Udacity
     - [Hill Climbing](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/hill-climbing/Hill_Climbing.ipynb)
     - ![Hill Climbing GIF1](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/hill-climbing/gifs/001.gif)
  - Lesson 3: Policy Gradient Methods
-    - [REINFORCE](https://github.com/ekaakurniawan/DRLND/blob/master/assignments/P3-Policy-Based-Methods/L3-Policy-Gradient-Methods/reinforce/REINFORCE.ipynb)
+    - [REINFORCE](./assignments/P3-Policy-Based-Methods/L3-Policy-Gradient-Methods/reinforce/REINFORCE.ipynb)
+ - Lesson 4: Proximal Policy Optimization
+    - [Pong using REINFORCE](./assignments/P3-Policy-Based-Methods/L4-Proximal-Policy-Optimization/pong-REINFORCE.ipynb)
+    - ![Pong using REINFORCE GIF1](./assignments/P3-Policy-Based-Methods/L4-Proximal-Policy-Optimization/gifs-REINFORCE/001.gif)
 
 ### Projects
 #### Project 1: Navigation
