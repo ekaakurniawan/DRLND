@@ -31,6 +31,8 @@ Deep Reinforcement Learning Nanodegree from Udacity
  - Lesson 4: Proximal Policy Optimization
     - [Pong using REINFORCE](./assignments/P3-Policy-Based-Methods/L4-Proximal-Policy-Optimization/pong-REINFORCE.ipynb)
     - ![Pong using REINFORCE GIF1](./assignments/P3-Policy-Based-Methods/L4-Proximal-Policy-Optimization/gifs-REINFORCE/001.gif)
+    - [Pong using PPO](./assignments/P3-Policy-Based-Methods/L4-Proximal-Policy-Optimization/pong-PPO.ipynb)
+    - ![Pong using PPO GIF1](./assignments/P3-Policy-Based-Methods/L4-Proximal-Policy-Optimization/gifs-PPO/001.gif)
 
 ### Projects
 #### Project 1: Navigation
