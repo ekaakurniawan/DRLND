@@ -36,5 +36,9 @@ Deep Reinforcement Learning Nanodegree from Udacity
 
 ### Projects
 #### Project 1: Navigation
- - [Navigation](https://github.com/ekaakurniawan/DRLND/blob/master/p1_navigation/Navigation.ipynb)
+ - [Navigation](./p1_navigation/Navigation.ipynb)
  - ![Navigation GIF1](./p1_navigation/results/gif/01.gif)
+ 
+#### Project 2: Continuous Control
+ - [Continuous Control](./p2_continuous-control/Continuous_Control.ipynb)
+ - ![Continuous Control GIF1](./p2_continuous-control/results/gif/01.gif)
