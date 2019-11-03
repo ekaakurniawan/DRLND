@@ -34,6 +34,10 @@ Deep Reinforcement Learning Nanodegree from Udacity
     - [Pong using PPO](./assignments/P3-Policy-Based-Methods/L4-Proximal-Policy-Optimization/pong-PPO.ipynb)
     - ![Pong using PPO GIF1](./assignments/P3-Policy-Based-Methods/L4-Proximal-Policy-Optimization/gifs-PPO/001.gif)
 
+#### Part 4: Multi-Agent Reinforcement Learning
+ - Lesson 2: Introduction
+    - [Physical Deception](./assignments/P4-Multi-Agent-Reinforcement-Learning/L2-Introduction-to-Multi-Agent-RL/physical-deception/physical-deception.ipynb) `UNSOLVED`
+
 ### Projects
 #### Project 1: Navigation
  - [Navigation](./p1_navigation/Navigation.ipynb)
