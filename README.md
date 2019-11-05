@@ -37,6 +37,10 @@ Deep Reinforcement Learning Nanodegree from Udacity
 #### Part 4: Multi-Agent Reinforcement Learning
  - Lesson 2: Introduction
     - [Physical Deception](./assignments/P4-Multi-Agent-Reinforcement-Learning/L2-Introduction-to-Multi-Agent-RL/physical-deception/physical-deception.ipynb) `UNSOLVED`
+ - Lesson 3: AlphaZero
+    - [Tic Tac Toe](./assignments/P4-Multi-Agent-Reinforcement-Learning/L3-Case-Study-AlphaZero/tic-tac-toe/alphazero-TicTacToe.ipynb)
+    - ![tic-tac-toe-1](./assignments/P4-Multi-Agent-Reinforcement-Learning/L3-Case-Study-AlphaZero/tic-tac-toe/images/machine-wins-1.png)
+    - ![tic-tac-toe-2](./assignments/P4-Multi-Agent-Reinforcement-Learning/L3-Case-Study-AlphaZero/tic-tac-toe/images/machine-wins-2.png)
 
 ### Projects
 #### Project 1: Navigation
