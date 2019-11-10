@@ -1,5 +1,5 @@
 # DRLND
-Deep Reinforcement Learning Nanodegree from Udacity
+Deep Reinforcement Learning Nanodegree from Udacity. The original course [GitHub repository](https://github.com/udacity/deep-reinforcement-learning).
 
 ## Contents
 ### Assignments
