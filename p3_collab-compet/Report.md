@@ -1,6 +1,7 @@
 [//]: # (Image References)
 
-[score_plot]: ./images/score_plot.png "Score Plot"
+[score-plot]: ./images/score_plot.png "Score Plot"
+
 
 # Implementation
 
