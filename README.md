@@ -50,3 +50,7 @@ Deep Reinforcement Learning Nanodegree from Udacity. The original course [GitHub
 #### Project 2: Continuous Control
  - [Continuous Control](./p2_continuous-control/Continuous_Control.ipynb)
  - ![Continuous Control GIF1](./p2_continuous-control/results/gif/01.gif)
+
+#### Project 3: Collaboration and Competition
+ - [Collaboration and Competition](./p3_collab-compet/Tennis.ipynb)
+ - ![Collaboration and Competition GIF1](./p3_collab-compet/results/gif/01.gif)
