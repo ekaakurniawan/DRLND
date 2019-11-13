@@ -20,6 +20,10 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
+### Setup Python Environment
+
+Please follow the instruction to [setup Python environment](https://github.com/udacity/deep-reinforcement-learning#dependencies) from the original course GitHub repository.
+
 ### Getting Started
 
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
