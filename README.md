@@ -1,6 +1,10 @@
 # DRLND
 Deep Reinforcement Learning Nanodegree from Udacity. The original course [GitHub repository](https://github.com/udacity/deep-reinforcement-learning).
 
+### Setup Python Environment
+
+Please follow the instruction to [setup Python environment](https://github.com/udacity/deep-reinforcement-learning#dependencies) from the original course GitHub repository.
+
 ## Contents
 ### Assignments
 #### Part 1: Introduction to Deep Reinforcement Learning
