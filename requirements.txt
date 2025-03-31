@@ -1,0 +1,10 @@
+matplotlib
+pandas
+seaborn
+jupyterlab
+ipykernel>=5.0
+ipython>=7.16.3
+ipywidgets
+gymnasium
+gymnasium[classic-control]
+gymnasium[box2d]
