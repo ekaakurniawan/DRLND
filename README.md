@@ -80,6 +80,7 @@ __Software Version__
  - Python 3.12.3
  - PyTorch 2.7.0+xpu
  - TorchVision 2.7.0+xpu
+ - Gymnasium 1.1.1
  - NumPy 2.1.2
  - Matplotlib 3.10.1
  - Pandas 2.2.3
