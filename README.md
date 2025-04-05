@@ -1,10 +1,6 @@
 # DRLND
 Deep Reinforcement Learning Nanodegree from Udacity. The original course [GitHub repository](https://github.com/udacity/deep-reinforcement-learning).
 
-### Setup Python Environment
-
-Please follow the instruction to [setup Python environment](https://github.com/udacity/deep-reinforcement-learning#dependencies) from the original course GitHub repository.
-
 ## Contents
 ### Assignments
 #### Part 1: Introduction to Deep Reinforcement Learning
@@ -58,3 +54,90 @@ Please follow the instruction to [setup Python environment](https://github.com/u
 #### Project 3: Collaboration and Competition
  - [Collaboration and Competition](./p3_collab-compet/Tennis.ipynb)
  - ![Collaboration and Competition GIF1](./p3_collab-compet/results/gif/01.gif)
+
+## Setup
+
+### Intel GPU
+
+Although we are going to use PyTorch 2.7 testing, please follow 
+[PyTorch 2.6 Prerequisites for Intel GPUs](https://www.intel.com/content/www/us/en/developer/articles/tool/pytorch-prerequisites-for-intel-gpu/2-6.html)
+article to install Intel GPU driver and deep learning essentials.
+
+Tested on the following hardware specification and software version.
+
+__Hardware Specification__
+ - CPU: Intel® Core™ Ultra 9 Processor 285K
+ - CPU Cores: 24 (8 Performance-cores and 16 Efficient-cores)
+ - CPU Threads: 24
+ - Memory: 32 GiB
+ - GPU: Intel® Arc™ A770 Graphics
+ - GPU Memory: 16 GiB
+ 
+__Software Version__
+ - Ubuntu 24.04.2 LTS
+ - Intel Graphics Compute Runtime [25.05.32567.17](https://github.com/intel/compute-runtime/releases/tag/25.05.32567.17)
+ - Intel Deep Learning Essentials 2025.0.2-6
+ - Python 3.12.3
+ - PyTorch 2.7.0+xpu
+ - TorchVision 2.7.0+xpu
+ - Gymnasium 1.1.1
+ - NumPy 2.1.2
+ - Matplotlib 3.10.1
+ - Pandas 2.2.3
+
+### Install Requirements
+
+Install required packages.
+```
+$ sudo apt install swig
+```
+
+Create virtual environment.
+```
+$ python3 -m venv pytorch_arc_env
+$ source pytorch_arc_env/bin/activate
+$ python -m pip install --upgrade pip
+```
+
+Install PyTorch and other required packages.
+```
+$ pip install torch==2.7 torchvision torchaudio --index-url https://download.pytorch.org/whl/test/xpu
+$ cd DRLND
+$ pip install --upgrade -r requirements.txt
+```
+
+### Test Run
+
+Activate virtual environment and setup variables.
+```
+$ source pytorch_arc_env/bin/activate
+
+$ source /opt/intel/oneapi/compiler/2025.0/env/vars.sh
+$ source /opt/intel/oneapi/umf/0.9/env/vars.sh
+$ source /opt/intel/oneapi/pti/0.10/env/vars.sh
+```
+
+Detect GPU.
+```
+$ python -c "import torch; print(torch.xpu.is_available())"
+```
+```
+True
+```
+
+### Run
+
+Activate virtual environment and setup variables.
+```
+$ source pytorch_arc_env/bin/activate
+
+$ source /opt/intel/oneapi/compiler/2025.0/env/vars.sh
+$ source /opt/intel/oneapi/umf/0.9/env/vars.sh
+$ source /opt/intel/oneapi/pti/0.10/env/vars.sh
+```
+
+Run the notebooks.
+```
+$ cd DRLND
+$ jupyter lab
+```
