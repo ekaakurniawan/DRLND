@@ -18,7 +18,6 @@ Deep Reinforcement Learning Nanodegree from Udacity. The original course [GitHub
  - Lesson 2: Deep Q-Networks
     - [Deep Q-Learning Algorithm](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/Deep_Q_Network.ipynb)
     - ![Deep Q-Learning Algorithm GIF1](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/gifs/001.gif)
-    - ![Deep Q-Learning Algorithm GIF2](./assignments/P2-Value-Based-Methods/L2-Deep-Q-Networks/exercise/gifs/002.gif)
 
 #### Part 3: Policy-Based Methods
  - Lesson 2: Introduction
@@ -89,7 +88,7 @@ __Software Version__
 
 Install required packages.
 ```
-$ sudo apt install swig
+$ sudo apt install swig ffmpeg
 ```
 
 Create virtual environment.
