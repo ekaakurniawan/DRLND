@@ -58,6 +58,35 @@ Deep Reinforcement Learning Nanodegree from Udacity. The original course [GitHub
 
 ### Intel GPU
 
+### Intel® Arc™ B580 Graphics 
+
+Please follow 
+[PyTorch 2.7 Prerequisites for Intel GPUs](https://www.intel.com/content/www/us/en/developer/articles/tool/pytorch-prerequisites-for-intel-gpu/2-7.html)
+article to install Intel GPU driver and deep learning essentials.
+
+Tested on the following hardware specification and software version.
+
+__Hardware Specification__
+ - CPU: Intel® Core™ Ultra 9 Processor 285K
+ - CPU Cores: 24 (8 Performance-cores and 16 Efficient-cores)
+ - CPU Threads: 24
+ - Memory: 32 GiB
+ - GPU: Intel® Arc™ B580 Graphics 
+ - GPU Memory: 12 GiB
+ 
+__Software Version__
+ - Ubuntu 25.04
+ - Intel Graphics Compute Runtime 24.52.032224
+ - Intel Deep Learning Essentials 2025.0.2-6
+ - Python 3.13.3
+ - PyTorch 2.7.0+xpu
+ - Gymnasium 1.1.1
+ - NumPy 2.1.2
+ - Matplotlib 3.10.1
+ - Pandas 2.2.3
+
+### Intel® Arc™ A770 Graphics
+
 Although we are going to use PyTorch 2.7 testing, please follow 
 [PyTorch 2.6 Prerequisites for Intel GPUs](https://www.intel.com/content/www/us/en/developer/articles/tool/pytorch-prerequisites-for-intel-gpu/2-6.html)
 article to install Intel GPU driver and deep learning essentials.
@@ -78,7 +107,6 @@ __Software Version__
  - Intel Deep Learning Essentials 2025.0.2-6
  - Python 3.12.3
  - PyTorch 2.7.0+xpu
- - TorchVision 2.7.0+xpu
  - Gymnasium 1.1.1
  - NumPy 2.1.2
  - Matplotlib 3.10.1
@@ -88,7 +116,7 @@ __Software Version__
 
 Install required packages.
 ```
-$ sudo apt install swig ffmpeg
+$ sudo apt install python3-dev swig ffmpeg
 ```
 
 Create virtual environment.
@@ -100,9 +128,9 @@ $ python -m pip install --upgrade pip
 
 Install PyTorch and other required packages.
 ```
-$ pip install torch==2.7 torchvision torchaudio --index-url https://download.pytorch.org/whl/test/xpu
+$ pip install torch==2.7 torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
 $ cd DRLND
-$ pip install --upgrade -r requirements.txt
+$ pip install --resume-retries 3 --upgrade -r requirements.txt
 ```
 
 ### Test Run
@@ -110,10 +138,6 @@ $ pip install --upgrade -r requirements.txt
 Activate virtual environment and setup variables.
 ```
 $ source pytorch_arc_env/bin/activate
-
-$ source /opt/intel/oneapi/compiler/2025.0/env/vars.sh
-$ source /opt/intel/oneapi/umf/0.9/env/vars.sh
-$ source /opt/intel/oneapi/pti/0.10/env/vars.sh
 ```
 
 Detect GPU.
@@ -129,10 +153,6 @@ True
 Activate virtual environment and setup variables.
 ```
 $ source pytorch_arc_env/bin/activate
-
-$ source /opt/intel/oneapi/compiler/2025.0/env/vars.sh
-$ source /opt/intel/oneapi/umf/0.9/env/vars.sh
-$ source /opt/intel/oneapi/pti/0.10/env/vars.sh
 ```
 
 Run the notebooks.
@@ -140,3 +160,28 @@ Run the notebooks.
 $ cd DRLND
 $ jupyter lab
 ```
+
+## Monitoring Tools
+
+### Ubuntu
+ - [top](https://man7.org/linux/man-pages/man1/top.1.html): CPU utilization and memory utilization for CPU and iGPU.
+ - [Intel GPU top](https://manpages.ubuntu.com/manpages/noble/man1/intel_gpu_top.1.html): Intel iGPU and dGPU utilization.
+ - [Intel PCM](https://github.com/intel/pcm): Intel CPU and iGPU power consumption.
+   To support the latest Intel CPU products, compile Intel PCM manually using the following steps.
+   ```
+   $ sudo apt install cmake
+   $ git clone https://github.com/intel/pcm.git
+   $ cd pcm/
+   $ mkdir build
+   $ cd build
+   $ cmake ..
+   $ cmake --build . --parallel --config Release
+   $ cd bin
+   $ sudo ./pcm -silent
+   ```
+ - [Intel XPU-SMI](https://intel.github.io/xpumanager/smi_install_guide.html): Intel dGPU power consumption and memory utilization.
+ - [NVIDIA SMI](https://docs.nvidia.com/deploy/nvidia-smi/index.html): NVIDIA dGPU utilization and power consumption.
+
+### Windows
+
+ - [HWiNFO](https://www.hwinfo.com/): CPU, iGPU, and dGPU utilization and power consumption.
