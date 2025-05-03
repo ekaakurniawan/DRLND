@@ -27,6 +27,7 @@ Deep Reinforcement Learning Nanodegree from Udacity. The original course [GitHub
     - ![Hill Climbing GIF1](./assignments/P3-Policy-Based-Methods/L2-Intro-to-Policy-Based-Methods/hill-climbing/gifs/001.gif)
  - Lesson 3: Policy Gradient Methods
     - [REINFORCE](./assignments/P3-Policy-Based-Methods/L3-Policy-Gradient-Methods/reinforce/REINFORCE.ipynb)
+    - ![REINFORCE GIF1](./assignments/P3-Policy-Based-Methods/L3-Policy-Gradient-Methods/reinforce/gifs/001.gif)
  - Lesson 4: Proximal Policy Optimization
     - [Pong using REINFORCE](./assignments/P3-Policy-Based-Methods/L4-Proximal-Policy-Optimization/pong-REINFORCE.ipynb)
     - ![Pong using REINFORCE GIF1](./assignments/P3-Policy-Based-Methods/L4-Proximal-Policy-Optimization/gifs-REINFORCE/001.gif)
