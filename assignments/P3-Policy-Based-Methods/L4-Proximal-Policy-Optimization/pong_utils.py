@@ -12,7 +12,7 @@ import random as rand
 RIGHT=4
 LEFT=5
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = "xpu" # selections: "xpu", "cuda:0", or "cpu"
  
 # preprocess a single frame
 # crop image and downsample to 80x80
@@ -58,8 +58,10 @@ def play(env, policy, time=2000, preprocess=None, nrand=5):
     
     # perform nrand random steps in the beginning
     for _ in range(nrand):
-        frame1, reward1, is_done, _ = env.step(np.random.choice([RIGHT,LEFT]))
-        frame2, reward2, is_done, _ = env.step(0)
+        frame1, reward1, terminated, truncated, _= env.step(np.random.choice([RIGHT,LEFT]))
+        is_done = terminated or truncated
+        frame2, reward2, terminated, truncated, _= env.step(0)
+        is_done = terminated or truncated
     
     anim_frames = []
     
@@ -70,8 +72,10 @@ def play(env, policy, time=2000, preprocess=None, nrand=5):
         
         # RIGHT = 4, LEFT = 5
         action = RIGHT if rand.random() < prob else LEFT
-        frame1, _, is_done, _ = env.step(action)
-        frame2, _, is_done, _ = env.step(0)
+        frame1, _, terminated, truncated, _= env.step(action)
+        is_done = terminated or truncated
+        frame2, _, terminated, truncated, _= env.step(0)
+        is_done = terminated or truncated
 
         if preprocess is None:
             anim_frames.append(frame1)
