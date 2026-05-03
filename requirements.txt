@@ -9,3 +9,4 @@ gymnasium
 gymnasium[classic-control]
 gymnasium[box2d]
 gymnasium[other]
+ale-py

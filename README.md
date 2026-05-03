@@ -59,7 +59,33 @@ Deep Reinforcement Learning Nanodegree from Udacity. The original course [GitHub
 
 ### Intel GPU
 
-### Intel® Arc™ B580 Graphics 
+### Intel® Arc™ B390 GPU
+
+Please follow 
+[PyTorch 2.11 Prerequisites for Intel GPUs](https://www.intel.com/content/www/us/en/developer/articles/tool/pytorch-prerequisites-for-intel-gpu/2-11.html)
+article to install Intel GPU driver and deep learning essentials.
+
+Tested on the following hardware specification and software version.
+
+__Hardware Specification__
+ - CPU: Intel® Core™ Ultra X7 Processor 358H
+ - CPU Cores: 16 (4 Performance-cores, 8 Efficient-cores, and 4 Low Power Efficient-cores)
+ - CPU Threads: 16
+ - Memory: 32 GiB
+ - iGPU: Intel® Arc™ B390 GPU
+ 
+__Software Version__
+ - Ubuntu 26.04
+ - Intel Graphics Compute Runtime 26.14.37833.4
+ - Python 3.14.4
+ - PyTorch 2.11.0+xpu
+ - Gymnasium 1.2.2
+ - Arcade Learning Environment 0.11.2
+ - NumPy 2.4.3
+ - Matplotlib 3.10.9
+ - Pandas 3.0.2
+
+### Intel® Arc™ B580 Graphics
 
 Please follow 
 [PyTorch 2.7 Prerequisites for Intel GPUs](https://www.intel.com/content/www/us/en/developer/articles/tool/pytorch-prerequisites-for-intel-gpu/2-7.html)
@@ -117,7 +143,7 @@ __Software Version__
 
 Install required packages.
 ```
-$ sudo apt install python3-dev swig ffmpeg
+$ sudo apt install python3-dev build-essential libopencv-dev swig ffmpeg
 ```
 
 Create virtual environment.
