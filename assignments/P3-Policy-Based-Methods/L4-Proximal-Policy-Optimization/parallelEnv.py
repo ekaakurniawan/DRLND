@@ -5,7 +5,7 @@
 
 
 import numpy as np
-import gym
+import gymnasium as gym
 from multiprocessing import Process, Pipe
 from abc import ABC, abstractmethod
 
@@ -103,12 +103,13 @@ def worker(remote, parent_remote, env_fn_wrapper):
     while True:
         cmd, data = remote.recv()
         if cmd == 'step':
-            ob, reward, done, info = env.step(data)
+            ob, reward, terminated, truncated, info = env.step(data)
+            done = terminated or truncated
             if done:
                 ob = env.reset()
             remote.send((ob, reward, done, info))
         elif cmd == 'reset':
-            ob = env.reset()
+            ob, _ = env.reset()
             remote.send(ob)
         elif cmd == 'reset_task':
             ob = env.reset_task()
@@ -118,20 +119,18 @@ def worker(remote, parent_remote, env_fn_wrapper):
             break
         elif cmd == 'get_spaces':
             remote.send((env.observation_space, env.action_space))
+        elif cmd == 'seed':
+            ob, _ = env.reset(seed=data)
         else:
             raise NotImplementedError
 
 
 class parallelEnv(VecEnv):
-    def __init__(self, env_name='PongDeterministic-v4',
-                 n=4, seed=None,
+    def __init__(self, env_name='PongNoFrameskip-v4',
+                 n=4, seed=0,
                  spaces=None):
 
-        env_fns = [ gym.make(env_name) for _ in range(n) ]
-
-        if seed is not None:
-            for i,e in enumerate(env_fns):
-                e.seed(i+seed)
+        env_fns = [ gym.make(env_name, render_mode="rgb_array") for _ in range(n) ]
         
         """
         envs: list of gym environments to run in subprocesses
@@ -149,6 +148,9 @@ class parallelEnv(VecEnv):
         for remote in self.work_remotes:
             remote.close()
 
+        for i, remote in enumerate(self.remotes):
+            remote.send(('seed', i + seed))
+        
         self.remotes[0].send(('get_spaces', None))
         observation_space, action_space = self.remotes[0].recv()
         VecEnv.__init__(self, len(env_fns), observation_space, action_space)
