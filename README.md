@@ -155,7 +155,7 @@ $ python -m pip install --upgrade pip
 
 Install PyTorch and other required packages.
 ```
-$ pip install torch==2.7 torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
+$ pip install torch==2.11 torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
 $ cd DRLND
 $ pip install --resume-retries 3 --upgrade -r requirements.txt
 ```
