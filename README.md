@@ -35,8 +35,6 @@ Deep Reinforcement Learning Nanodegree from Udacity. The original course [GitHub
     - ![Pong using PPO GIF1](./assignments/P3-Policy-Based-Methods/L4-Proximal-Policy-Optimization/gifs-PPO/001.gif)
 
 #### Part 4: Multi-Agent Reinforcement Learning
- - Lesson 2: Introduction
-    - [Physical Deception](./assignments/P4-Multi-Agent-Reinforcement-Learning/L2-Introduction-to-Multi-Agent-RL/physical-deception/physical-deception.ipynb) `UNSOLVED`
  - Lesson 3: AlphaZero
     - [Tic Tac Toe](./assignments/P4-Multi-Agent-Reinforcement-Learning/L3-Case-Study-AlphaZero/tic-tac-toe/alphazero-TicTacToe.ipynb)
     - ![tic-tac-toe-1](./assignments/P4-Multi-Agent-Reinforcement-Learning/L3-Case-Study-AlphaZero/tic-tac-toe/images/machine-wins-1.png)
@@ -143,7 +141,7 @@ __Software Version__
 
 Install required packages.
 ```
-$ sudo apt install python3-dev build-essential libopencv-dev swig ffmpeg
+$ sudo apt install python3-dev build-essential libopencv-dev swig ffmpeg python3-tk
 ```
 
 Create virtual environment.
