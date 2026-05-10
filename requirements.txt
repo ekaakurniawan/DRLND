@@ -10,3 +10,6 @@ gymnasium[classic-control]
 gymnasium[box2d]
 gymnasium[other]
 ale-py
+PyQt5
+PyQt6
+PySide2

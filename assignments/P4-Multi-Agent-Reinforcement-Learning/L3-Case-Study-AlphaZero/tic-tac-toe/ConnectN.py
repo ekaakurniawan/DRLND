@@ -84,7 +84,7 @@ class ConnectN:
 
           
           self.score = None
-          self.state=np.zeros(size, dtype=np.float)
+          self.state=np.zeros(size, dtype=float)
           self.player=1
           self.last_move=None
           self.n_moves=0

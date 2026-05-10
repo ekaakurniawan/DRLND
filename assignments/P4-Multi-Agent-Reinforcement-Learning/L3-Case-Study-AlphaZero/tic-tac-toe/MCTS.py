@@ -45,8 +45,7 @@ tinvlist_half=[t0inv, t1inv, t2inv, t3inv]
 transformation_list = list(zip(tlist, tinvlist))
 transformation_list_half = list(zip(tlist_half, tinvlist_half))
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu") 
-device ='cpu'
+device ="xpu" # "cpu" or "xpu" or "cuda:0"
 
 def process_policy(policy, game):
 
@@ -58,14 +57,16 @@ def process_policy(policy, game):
     else:
         t, tinv = random.choice(transformation_list_half)
      
-    frame=torch.tensor(t(game.state*game.player), dtype=torch.float, device=device)
-    input=frame.unsqueeze(0).unsqueeze(0)
-    prob, v = policy(input)
+    frame=torch.tensor(t(game.state*game.player), dtype=torch.float)
+    frame_input=frame.unsqueeze(0).unsqueeze(0).to(device)
+    prob, v = policy(frame_input)
+    prob = prob.to("cpu")
+    v = v.to("cpu")
     mask = torch.tensor(game.available_mask())
     
     # we add a negative sign because when deciding next move,
     # the current player is the previous player making the move
-    return game.available_moves(), tinv(prob)[mask].view(-1), v.squeeze().squeeze()
+    return game.available_moves(), tinv(prob)[mask].reshape(-1), v.squeeze().squeeze()
 
 class Node:
     def __init__(self, game, mother=None, prob=torch.tensor(0., dtype=torch.float)):
@@ -100,7 +101,7 @@ class Node:
         # if game is won/loss/draw
         if self.game.score is not None:
             self.V = self.game.score*self.game.player
-            self.U = 0 if self.game.score is 0 else self.V*float('inf')
+            self.U = 0 if self.game.score == 0 else self.V*float('inf')
 
         # link to previous node
         self.mother = mother
@@ -156,7 +157,7 @@ class Node:
             next_actions, probs, v = process_policy(policy, current.game)
             current.nn_v = -v
             current.create_child(next_actions, probs)
-            current.V = -float(v)
+            current.V = -float(v.detach().item())
 
         
         current.N += 1
