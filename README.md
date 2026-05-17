@@ -40,20 +40,13 @@ Deep Reinforcement Learning Nanodegree from Udacity. The original course [GitHub
     - ![tic-tac-toe-1](./assignments/P4-Multi-Agent-Reinforcement-Learning/L3-Case-Study-AlphaZero/tic-tac-toe/images/machine-wins-1.png)
     - ![tic-tac-toe-2](./assignments/P4-Multi-Agent-Reinforcement-Learning/L3-Case-Study-AlphaZero/tic-tac-toe/images/machine-wins-2.png)
 
-### Projects
-#### Project 1: Navigation
- - [Navigation](./p1_navigation/Navigation.ipynb)
- - ![Navigation GIF1](./p1_navigation/results/gif/01.gif)
- 
-#### Project 2: Continuous Control
- - [Continuous Control](./p2_continuous-control/Continuous_Control.ipynb)
- - ![Continuous Control GIF1](./p2_continuous-control/results/gif/01.gif)
-
-#### Project 3: Collaboration and Competition
- - [Collaboration and Competition](./p3_collab-compet/Tennis.ipynb)
- - ![Collaboration and Competition GIF1](./p3_collab-compet/results/gif/01.gif)
+#### Unity Machine Learning Agents Toolkit
+ - [Setup Unity Machine Learning Agents Toolkit and PyTorch XPU](./doc/setup_unity_ml_agents_pytorch_xpu.md)
+ - ![Unity ML Agents Inference Walker](./doc/unity_ml_agents_inference_walker.gif)
 
 ## Setup
+
+These setup steps are only for all assignments (part 1 to 4). Please follow separate setup steps for Unity Machine Learning Agents Toolkit.
 
 ### Intel GPU
 
