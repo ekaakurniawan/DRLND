@@ -11,7 +11,7 @@ Hardware Specification:
 
 Software Version:
  - Ubuntu 26.04 LTS
- - Intel Graphics Compute Runtime 26.14.37833.4
+ - Intel Graphics Compute Runtime 26.22.38646.4
  - Python 3.10.12
  - PyTorch 2.8.0+xpu
  - Unity ml-agents 1.2.0.dev0
@@ -55,17 +55,10 @@ After activating the virtual environment for Unity ML Agents, the prompt should 
 (mlagents_cenv) ... $
 ```
 
-Download Unity ML Agents [release 23](https://github.com/Unity-Technologies/ml-agents/releases/tag/release_23_tag)
-or later, extract it, and rename the directory to `ml-agents`.
-
-Make changes in `ml-agents/mlagents/torch_utils/torch.py` file to support PyTorch XPU target device.
-Please refer to [this commit](https://github.com/ekaakurniawan/ml-agents/commit/fa66ceaf82e8a51a5431e6f70d561b05321da899).
+Download Unity ML Agents.
 ```
-...
-    elif _device.type == "xpu":
-        torch.set_default_device(_device.type)
-        torch.set_default_dtype(torch.float32)
-...
+$ git clone --revision=aeb6f7aee8d9b4aa63329476557d94d87c541146 --depth=1 \
+  https://github.com/Unity-Technologies/ml-agents.git
 ```
 
 Install Unity ML Agents.
@@ -78,7 +71,8 @@ $ python -m pip install ./ml-agents
 Install PyTorch XPU. PyTorch 2.8 is the highest version supported based on 
 [this pull request](https://github.com/Unity-Technologies/ml-agents/pull/6251).
 ```
-$ python -m pip install torch==2.8 torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
+$ python -m pip install torch==2.8.0+xpu torchvision==0.23.0+xpu torchaudio==2.11.0+xpu \
+  --index-url https://download.pytorch.org/whl/xpu
 ```
 
 ## Load Unity ML Agents Project
